@@ -7,6 +7,7 @@ import JobsView from '../views/JobsView.vue'
 Vue.use(VueRouter);
 
 export const router = new VueRouter({
+  mode: 'history',//url에 붙어있던 해시를 없애준다.
   routes: [
     {
       path: '/',
@@ -23,6 +24,6 @@ export const router = new VueRouter({
     {
       path: '/jobs',
       component: JobsView
-    },
+    }
   ]
 });
